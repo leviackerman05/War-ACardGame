@@ -1,0 +1,28 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-image: url("table1.jpg");
+    font-family: "Exo 2";
+    height: 100vh;
+    align-items: center;
+    font-weight: 600;
+}
+
+button {
+    border: none;
+    background-color: #FFF100;
+}
+
+#draw-cards {
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#new-deck {
+    width: 200px;
+}
