@@ -5,10 +5,10 @@ html, body {
     margin: 0;
     padding: 0;
     background-image: url("table1.jpg");
+    background-size: cover;
     font-family: "Exo 2";
     height: 100vh;
     align-items: center;
-    font-weight: 600;
 }
 
 button {
@@ -21,8 +21,24 @@ button {
     margin: 5px;
     padding: 5px;
     font-size: 1.2em;
+    font-weight: 600;
 }
 
 #new-deck {
     width: 200px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.card-slot {
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 118px;
+    width: 85.71px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 100%;
 }
