@@ -1,44 +1,74 @@
 html, body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     background-image: url("table1.jpg");
     background-size: cover;
-    font-family: "Exo 2";
+    font-family: "Exo 2", sans-serif;
     height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    color: white;
 }
 
 button {
-    border: none;
     background-color: #FFF100;
+    cursor: pointer;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
 }
 
-#draw-cards {
-    width: 400px;
-    margin: 5px;
-    padding: 5px;
-    font-size: 1.2em;
-    font-weight: 600;
+#winner-text {
+    position: absolute;
+    top: 100px  ;
 }
 
 #new-deck {
-    width: 200px;
-    margin: 5px;
+    align-items: center;
     padding: 5px;
-    font-weight: 600;
+    width: 150px;
+}
+
+#draw-cards {
+    font-size: 1.2em;
+    padding: 5px;
+    width: 400px;
 }
 
 .card-slot {
     border: 1px solid black;
-    border-radius: 6px;
-    height: 118px;
-    width: 85.71px;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px * 5 / 7);
+}
+
+.card-slot:nth-of-type(1) {
     margin-bottom: 50px;
 }
 
-.card {
+img.card {
     width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-self: center;
+}
+
+#remaining {
+    margin: 5px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+#computer-score {
+    margin-top: 100px;
 }

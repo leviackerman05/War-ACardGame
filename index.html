@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="new-deck">Shuffle Deck</button>
+    <div class="header">
+      <button id="new-deck">Shuffle Deck</button>
+      <h3 id="remaining"></h3>
+    </div>
+    <h3 id="winner-text">PLAY</h3>
+    <h3 id="computer-score">Computer's Score: 0</h3>
     <div id="cards">
       <div class="card-slot"></div>
       <div class="card-slot"></div>
     </div>
+    <h3 id="my-score">My Score: 0</h3>
     <button id="draw-cards">Draw</button>
     <script src="index.js" async></script>
   </body>
